@@ -1,0 +1,25 @@
+name: FragranticaMLSwiftUIApp
+options:
+  bundleIdPrefix: com.example
+settings:
+  base:
+    SWIFT_VERSION: 5.0
+targets:
+  FragranticaMLSwiftUIApp:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: FragranticaMLSwiftUIApp
+        excludes:
+          - Resources/*.json
+    resources:
+      - FragranticaMLSwiftUIApp/Resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.FragranticaMLSwiftUIApp
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: true
+        INFOPLIST_KEY_UILaunchScreen_Generation: true
+        INFOPLIST_KEY_CFBundleDisplayName: Fragrantica ML
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGN_STYLE: Automatic
